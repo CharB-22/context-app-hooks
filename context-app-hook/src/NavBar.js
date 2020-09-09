@@ -27,6 +27,7 @@ const wordsNav = {
 }
 
 function NavBar(props) {
+    console.log(LanguageContext)
     const {classes} = props;
     const {isDarkTheme, toggleTheme} = useContext(ThemeContext);
     const {language} = useContext(LanguageContext);

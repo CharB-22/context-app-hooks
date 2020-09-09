@@ -10,7 +10,7 @@ export default function PageContent(props) {
     }
     return(
         <div style={styles}>
-            {this.props.children}
+            {props.children}
         </div>
     )
 }

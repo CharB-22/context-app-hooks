@@ -36,7 +36,7 @@ const words = {
     }
 }
 
-export default function Form(props) {
+function Form(props) {
     const {language, changeLanguage} = useContext(LanguageContext);
     const { classes } = props;
     const { email, password, rememberMe, signin } = words[language];
@@ -72,3 +72,5 @@ export default function Form(props) {
         </main>
     )
 }
+
+export default withStyles(styles)(Form);
